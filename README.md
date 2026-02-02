@@ -1,16 +1,44 @@
-# React + Vite
+ # Personal Portfolio Website (Frontend – React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Tech Stack:** React.js, Tailwind CSS  
 
-Currently, two official plugins are available:
+**Description:**  
+A personal portfolio website built using **React.js** to showcase projects, skills, and experience. The website focuses on modern UI animations, clean component architecture, and a professional responsive design.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Key Features
+- Animated loading bar  
+- Advanced UI animations  
+- Reusable and modular components  
+- Data handling using props drilling  
+- Responsive and modern UI design  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Skills & Technologies
+- React.js  
+- Props Drilling  
+- Component Reusability  
+- UI Animations  
+- Modern Frontend Practices  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Frontend Packages Used
+- React (`react`, `react-dom`)  
+- React Router (`react-router`, `react-router-dom`)  
+- Tailwind CSS (`tailwindcss`, `@tailwindcss/vite`)  
+- Lucide React (`lucide-react`)  
+
+---
+
+## What I Learned
+- Designing a professional portfolio UI  
+- Integrating animations in React applications  
+- Structuring reusable and scalable components  
+- Improving overall frontend code organization  
+
+---
+
+🌍 **Live Demo:** [https://muhammadaamir.vercel.app/](https://muhammadaamir.vercel.app/)
