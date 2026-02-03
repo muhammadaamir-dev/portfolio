@@ -13,7 +13,7 @@ const Hero = () => {
 
   const handleContactClick = (e) => {
     e.preventDefault();
-    
+
     if (location.pathname !== '/') {
       navigate('/');
       setTimeout(() => {
@@ -135,14 +135,16 @@ const Hero = () => {
       </div>
 
       <style>{`
-        .animate-float {
-          animation: float 0.4s ease-in-out infinite;
-        }
-        @keyframes float {
-          0% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
-          100% { transform: translateY(0); }
-        }
+    .animate-float {
+  animation: float 0.2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
       `}</style>
     </section>
   );
