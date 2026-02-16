@@ -12,24 +12,29 @@ const About = () => {
     <div className="bg-gray-50 min-h-screen  ">
 
       {/* Hero Section */}
-      <section id="about" className="max-w-5xl mx-auto px-6  pt-32 pb-10 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Hi, I'm Muhammad Aamir
-        </h1>
+     <section id="about" className="max-w-5xl mx-auto px-6 pt-32 pb-10 text-center">
+  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+    Hi, I'm Muhammad Aamir
+  </h1>
 
-        <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-          A <span className="font-semibold text-sky-500">Full-Stack Software Developer</span> with experience in Unity game development, now focused on Full-Stack Web Development. I build MERN stack applications with secure RESTful APIs, authentication & authorization (JWT, role-based access), and complete end-to-end workflows designed for real-world use.
-        </p>
+  <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+    A <span className="font-semibold text-sky-500">Full-Stack Software Developer</span> specializing in modern web applications with hands-on experience in the MERN stack. I build scalable, secure, and production-ready applications with RESTful APIs, authentication & authorization (JWT, role-based access), and complete end-to-end workflows designed for real-world business use.
+  </p>
 
-        <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-          I focus on creating <span className="font-semibold text-sky-500">scalable, secure, and maintainable</span> web applications using modern JavaScript technologies, clean architecture, and database-driven systems.
-        </p>
+  <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+    My expertise includes creating <span className="font-semibold text-sky-500">maintainable architectures, database-driven systems, and high-performance applications</span> using modern JavaScript technologies and clean development practices.
+  </p>
 
-        <p className="text-lg font-medium text-gray-700">
-          <span className="text-sky-500 font-bold">Why Work With Me:</span>{" "}
-          I deliver production-ready web applications with clean code, secure systems, and a strong focus on performance, scalability, and long-term maintainability.
-        </p>
-      </section>
+  <p className="text-lg font-medium text-gray-700 mb-8">
+    <span className="text-sky-500 font-bold">Why Work With Me:</span>{" "}
+    I deliver production-ready web applications with clean code, secure systems, and a strong focus on performance, scalability, and long-term maintainability.
+  </p>
+
+  <p className="text-lg text-gray-700 leading-relaxed">
+    Additionally, I have prior experience in Unity game development, which has strengthened my problem-solving skills and software architecture understanding.
+  </p>
+</section>
+
 
       {/* Why Software Fails */}
       <section className="max-w-5xl mx-auto px-6 py-12">
