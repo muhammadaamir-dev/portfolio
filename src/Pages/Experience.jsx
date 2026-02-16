@@ -15,7 +15,7 @@ const Experience = () => {
       title: "MERN Stack Training Program",
       company: "SeeBiz",
       location: "Lahore, Punjab, Pakistan",
-      period: "Jul 2025 - Dec 2025",
+      period: "Aug 2025 - Jan 2026",
       type: "Full-time • Training",
       achievements: [
         "Completed comprehensive 6-month MERN Stack development training",

@@ -2,58 +2,59 @@
  import { useNavigate, useLocation } from "react-router-dom";
  
  // FAQ data
- const faqs = [
-   {
-     question: "What is your pricing model?",
-     answer:
-       "My pricing depends on project scope, complexity, and timeline. I offer fixed-price, milestone-based, and hourly models depending on your needs."
-   },
-   {
-     question: "Do you provide ongoing support after launch?",
-     answer:
-       "Yes, I provide ongoing support, maintenance, and feature enhancements after project launch based on agreed terms."
-   },
-   {
-     question: "Do you sign NDAs?",
-     answer:
-       "Yes, I'm comfortable signing NDAs to ensure confidentiality and data protection."
-   },
-   {
-     question: "Which tech stacks do you specialize in?",
-     answer:
-       "I specialize in React, Next.js, Angular, Node.js, .NET, REST APIs, cloud deployment, and AI-powered integrations."
-   },
-   {
-     question: "Can you work with remote teams?",
-     answer:
-       "Absolutely. I've worked with distributed teams using modern collaboration tools and agile workflows."
-   },
-   {
-     question: "Can you integrate AI features into projects?",
-     answer:
-       "Yes, I can integrate AI features such as chatbots, automation, analytics, and LLM-powered solutions."
-   },
-   {
-     question: "What time zones do you work in?",
-     answer:
-       "I'm flexible and can coordinate with clients in UTC ±12, with priority for Europe, USA, and Asia collaborations."
-   },
-   {
-     question: "How do you communicate with clients?",
-     answer:
-       "I communicate via Slack, Zoom, email, and project management tools with regular updates."
-   },
-   {
-     question: "What is your typical project timeline?",
-     answer:
-       "Small projects usually take 2–4 weeks, while larger systems may take 6–12 weeks depending on scope."
-   },
-   {
-     question: "What types of projects do you take?",
-     answer:
-       "I work on SaaS platforms, dashboards, web applications, APIs, and scalable enterprise systems."
-   }
- ];
+const faqs = [
+  {
+    question: "What is your pricing model?",
+    answer:
+      "My pricing depends on the project requirements, features, and timeline. For most projects, I prefer fixed pricing or milestone-based payments so everything stays clear and manageable."
+  },
+  {
+    question: "Do you provide support after project completion?",
+    answer:
+      "Yes, I can provide support after the project is completed, including small fixes, updates, or guidance if needed."
+  },
+  {
+    question: "Do you sign NDAs?",
+    answer:
+      "Yes, I’m open to signing NDAs to maintain confidentiality and protect client information."
+  },
+  {
+    question: "Which technologies do you work with?",
+    answer:
+      "I mainly work with React, JavaScript, Tailwind CSS, Node.js, Express, MongoDB, and Unity for game development. I’m always learning new technologies to improve my skills."
+  },
+  {
+    question: "Can you work with remote teams?",
+    answer:
+      "Yes, I’m comfortable working with remote teams and communicating through online collaboration tools."
+  },
+  {
+    question: "Are you open to learning new tools or technologies?",
+    answer:
+      "Absolutely. I enjoy learning new technologies and adapting to project requirements to deliver the best possible results."
+  },
+  {
+    question: "What time zones do you work in?",
+    answer:
+      "I’m flexible with working hours and can adjust my schedule to coordinate with different time zones when needed."
+  },
+  {
+    question: "How do you communicate during projects?",
+    answer:
+      "I usually communicate through WhatsApp, Zoom, email, or other collaboration tools, and I provide regular updates on progress."
+  },
+  {
+    question: "What is your typical project timeline?",
+    answer:
+      "Small projects usually take 1–3 weeks depending on the complexity, while larger projects may take longer based on requirements."
+  },
+  {
+    question: "What types of projects are you interested in?",
+    answer:
+      "I’m interested in working on web applications, frontend projects, MERN stack applications, and Unity game development projects where I can learn and grow."
+  }
+];
+
  
  // Single FAQ Item
  const FAQItem = ({ item, isOpen, onClick }) => (

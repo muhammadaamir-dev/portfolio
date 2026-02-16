@@ -3,75 +3,47 @@ import { Code, Server, Cloud, Gamepad2  , ExternalLink } from 'lucide-react';
 import { useState } from "react";
 
 const CompleteSkill = () => {
- const skills = {
-    Frontend: [
-      { name: 'HTML', level: 'expert' },
-      { name: 'CSS', level: 'expert' },
-      { name: 'JavaScript', level: 'expert' },
-      { name: 'TypeScript', level: 'intermediate' },
-      { name: 'React.js', level: 'expert' },
-      { name: 'Next.js', level: 'expert' },
-      { name: 'Angular', level: 'intermediate' },
-      { name: 'Tailwind CSS', level: 'expert' },
-      { name: 'Bootstrap', level: 'expert' },
-      { name: 'Responsive Design', level: 'expert' },
-      { name: 'Figma', level: 'beginner' },
-      { name: 'jQuery', level: 'intermediate' },
-    ],
-    Backend: [
-      { name: 'Python', level: 'expert' },
-      { name: 'C++', level: 'beginner' },
-      { name: 'Node.js', level: 'expert' },
-      { name: 'Express.js', level: 'expert' },
-      { name: 'FastAPI', level: 'intermediate' },
-      { name: 'C#', level: 'beginner' },
-      { name: '.NET', level: 'beginner' },
-      { name: 'PHP', level: 'beginner' },
-      { name: 'REST APIs', level: 'expert' },
-      { name: 'WebSockets', level: 'intermediate' },
-      { name: 'JWT', level: 'intermediate' },
-      { name: 'Firebase', level: 'intermediate' },
-    ],
-    Database: [
-      { name: 'SQL', level: 'intermediate' },
-      { name: 'MongoDB', level: 'expert' },
-      { name: 'MySQL', level: 'intermediate' },
-      { name: 'PostgreSQL', level: 'intermediate' },
-    ],
-    Tools: [
-      { name: 'Git', level: 'expert' },
-      { name: 'GitHub', level: 'expert' },
-      { name: 'Jira', level: 'beginner' },
-      { name: 'Trello', level: 'beginner' },
-      { name: 'VS Code', level: 'expert' },
-      { name: 'Notion', level: 'intermediate' },
-      { name: 'Electron.js', level: 'beginner' },
-      { name: 'Component-Based Architecture', level: 'expert' },
-      { name: 'Clean Code', level: 'expert' },
-      { name: 'Scalable Systems', level: 'intermediate' },
-      { name: 'Production-Ready Apps', level: 'expert' },
-      { name: 'WordPress', level: 'intermediate' },
-      { name: 'Elementor', level: 'intermediate' },
-      { name: 'Agile/Scrum', level: 'intermediate' },
-      { name: 'Version Control', level: 'expert' },
-    ],
-    DevOps: [
-      { name: 'Vercel', level: 'expert' },
-      { name: 'Netlify', level: 'expert' },
-      { name: 'AWS', level: 'intermediate' },
-      { name: 'GCP', level: 'beginner' },
-      { name: 'CI/CD', level: 'intermediate' },
-      { name: 'Surge', level: 'intermediate' },
-      { name: 'Firebase Hosting', level: 'intermediate' },
-    ],
-    'AI/ML': [
-      { name: 'Generative AI', level: 'intermediate' },
-      { name: 'AI-assisted development', level: 'expert' },
-      { name: 'LLMs', level: 'intermediate' },
-      { name: 'Streamlit', level: 'intermediate' },
-      { name: 'OpenAI API', level: 'expert' },
-    ],
-  };
+const skills = {
+  Frontend: [
+    { name: 'HTML', level: 'expert' },
+    { name: 'CSS', level: 'expert' },
+    { name: 'JavaScript', level: 'intermediate' },
+    { name: 'React.js', level: 'intermediate' },
+    { name: 'Next.js', level: 'beginner' },
+    { name: 'Tailwind CSS', level: 'intermediate' },
+    { name: 'Bootstrap', level: 'intermediate' },
+    { name: 'Responsive Design', level: 'expert' },
+  ],
+
+  Backend: [
+    { name: 'Node.js', level: 'intermediate' },
+    { name: 'Express.js', level: 'intermediate' },
+    { name: 'REST APIs', level: 'intermediate' },
+    { name: 'JWT Authentication', level: 'beginner' },
+  ],
+
+  Database: [
+    { name: 'MongoDB', level: 'intermediate' },
+    { name: 'Mongoose', level: 'intermediate' },
+    { name: 'CRUD Operations', level: 'expert' },
+  ],
+
+  Tools: [
+    { name: 'Git', level: 'intermediate' },
+    { name: 'GitHub', level: 'intermediate' },
+    { name: 'VS Code', level: 'expert' },
+    { name: 'Postman', level: 'intermediate' },
+    { name: 'npm', level: 'intermediate' },
+  ],
+
+  DevOps: [
+    { name: 'Vercel', level: 'intermediate' },
+    { name: 'Netlify', level: 'intermediate' },
+    { name: 'Environment Variables', level: 'intermediate' },
+  ],
+};
+
+
 const getLevelColor = (level) => {
     switch (level) {
       case 'expert':

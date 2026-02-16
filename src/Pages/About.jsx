@@ -18,7 +18,7 @@ const About = () => {
         </h1>
 
         <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-          A <span className="font-semibold text-sky-500">Full-Stack Software Engineer</span> with experience in Unity game development, now focused on Full-Stack Web Development. I build MERN stack applications with secure RESTful APIs, authentication & authorization (JWT, role-based access), and complete end-to-end workflows designed for real-world use.
+          A <span className="font-semibold text-sky-500">Full-Stack Software Developer</span> with experience in Unity game development, now focused on Full-Stack Web Development. I build MERN stack applications with secure RESTful APIs, authentication & authorization (JWT, role-based access), and complete end-to-end workflows designed for real-world use.
         </p>
 
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">

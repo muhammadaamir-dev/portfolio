@@ -14,7 +14,7 @@ const Educations = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-32 p-8">
       <div className="max-w-5xl mx-auto">
-        
+
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
@@ -28,7 +28,7 @@ const Educations = () => {
         {/* University Section - Featured */}
         <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 mb-6 relative">
           {/* Featured Badge */}
-           
+
 
           <div className="flex flex-col md:flex-row gap-6">
             {/* Icon */}
@@ -47,14 +47,14 @@ const Educations = () => {
                 Master of Computer Science (MCS)
               </h3>
               <p className="text-gray-600 text-sm mb-4">
-                Computer Science, Software Engineering
+                Computer Science
               </p>
 
               {/* Duration and Grade */}
               <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-6">
                 <span className="flex items-center gap-1.5">
                   <Calendar className="w-4 h-4" />
-                  2022 - 2024
+                  2020 - 2022
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Award className="w-4 h-4" />
@@ -70,7 +70,7 @@ const Educations = () => {
                     <h4 className="font-semibold text-gray-700 text-sm">CGPA</h4>
                   </div>
                   <p className="text-3xl font-bold text-sky-600">
-                    3.67 <span className="text-lg text-gray-500">/ 4.00</span>
+                    3.66 <span className="text-lg text-gray-500">/ 4.00</span>
                   </p>
                   <p className="text-xs text-gray-600 mt-1">(A)</p>
                 </div>
@@ -84,7 +84,7 @@ const Educations = () => {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {['Data Structures & Algorithms', 'Databases', 'Artificial Intelligence', 'Software Engineering', 'Web Technologies', 'Advanced Programming'].map((course, index) => (
-                    <span 
+                    <span
                       key={index}
                       className="px-3 py-1.5 bg-sky-100 text-sky-700 text-sm rounded-lg"
                     >
@@ -101,31 +101,28 @@ const Educations = () => {
         <div className="flex justify-center gap-4 mb-6">
           <button
             onClick={() => setActiveTab('training')}
-            className={`px-6 py-2.5 rounded-lg font-medium transition-colors ${
-              activeTab === 'training'
-                ? 'bg-gray-200 text-gray-900'
-                : 'bg-white text-gray-600 hover:bg-gray-100'
-            }`}
+            className={`px-6 py-2.5 rounded-lg font-medium transition-colors ${activeTab === 'training'
+              ? 'bg-gray-200 text-gray-900'
+              : 'bg-white text-gray-600 hover:bg-gray-100'
+              }`}
           >
             Training Programs
           </button>
           <button
             onClick={() => setActiveTab('degree')}
-            className={`px-6 py-2.5 rounded-lg font-medium transition-colors ${
-              activeTab === 'degree'
-                ? 'bg-sky-500 text-white'
-                : 'bg-white text-gray-600 hover:bg-gray-100'
-            }`}
+            className={`px-6 py-2.5 rounded-lg font-medium transition-colors ${activeTab === 'degree'
+              ? 'bg-sky-500 text-white'
+              : 'bg-white text-gray-600 hover:bg-gray-100'
+              }`}
           >
             Bachelor's Degree
           </button>
           <button
             onClick={() => setActiveTab('school')}
-            className={`px-6 py-2.5 rounded-lg font-medium transition-colors ${
-              activeTab === 'school'
-                ? 'bg-sky-500 text-white'
-                : 'bg-white text-gray-600 hover:bg-gray-100'
-            }`}
+            className={`px-6 py-2.5 rounded-lg font-medium transition-colors ${activeTab === 'school'
+              ? 'bg-sky-500 text-white'
+              : 'bg-white text-gray-600 hover:bg-gray-100'
+              }`}
           >
             School Education
           </button>
@@ -146,20 +143,20 @@ const Educations = () => {
                   The Islamia University of Bahawalpur
                 </h2>
                 <h3 className="text-xl text-green-600 font-semibold mb-3">
-                  Bachelor of Science in Computer Science (BSc CS)
+                  Bachelor of Science in Computer Science (BSC)
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  Computer Science, Programming, Software Development
+                  Computer Science,
                 </p>
 
                 <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-6">
                   <span className="flex items-center gap-1.5">
                     <Calendar className="w-4 h-4" />
-                    2018 - 2022
+                    2018 - 2020
                   </span>
                   <span className="flex items-center gap-1.5">
                     <Award className="w-4 h-4" />
-                    Grade: A
+                    Grade: C
                   </span>
                 </div>
 
@@ -169,8 +166,14 @@ const Educations = () => {
                     <h4 className="font-semibold text-gray-900">Key Coursework</h4>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    {['Object Oriented Programming', 'Data Structures', 'Database Systems', 'Web Development', 'Software Engineering', 'Computer Networks', 'Operating Systems', 'Discrete Mathematics'].map((course, index) => (
-                      <span 
+                    {[
+                      'Advanced Computer Studies',
+                      'Database Systems',
+                      'Web Development',
+                      'Geography',
+                      'Psychology'
+                    ].map((course, index) => (
+                      <span
                         key={index}
                         className="px-3 py-1.5 bg-green-100 text-green-700 text-sm rounded-lg"
                       >
@@ -187,7 +190,7 @@ const Educations = () => {
         {/* School Education Section */}
         {activeTab === 'school' && (
           <div className="space-y-4">
-            
+
             {/* Intermediate/College */}
             <div className="bg-white rounded-xl shadow-md border-2 border-sky-200 overflow-hidden">
               <button
@@ -200,15 +203,16 @@ const Educations = () => {
                   </div>
                   <div className="text-left">
                     <h3 className="text-lg font-bold text-gray-900">
-                      Unique Group of Institutions
+
+                      Govt Boys Higher Secondary School
                     </h3>
                     <p className="text-sky-600 font-medium text-sm">
-                      Intermediate (FSc Pre-Engineering)
+                      Intermediate (FSc  Computer Science)
                     </p>
                     <div className="flex gap-4 text-sm text-gray-600 mt-1">
-                      <span>2017 - 2019</span>
+                      <span>2016 - 2018</span>
                       <span>•</span>
-                      <span>Grade: A+</span>
+                      <span>Grade: C</span>
                     </div>
                   </div>
                 </div>
@@ -218,14 +222,14 @@ const Educations = () => {
                   <ChevronDown className="w-5 h-5 text-gray-600" />
                 )}
               </button>
-              
+
               {expandedSchool === 'college' && (
                 <div className="px-6 pb-6 border-t border-sky-100">
                   <div className="pt-4">
                     <h4 className="font-semibold text-gray-900 mb-3 text-sm">Coursework</h4>
                     <div className="flex flex-wrap gap-2">
                       {['Mathematics', 'Physics', 'Chemistry', 'Computer Science'].map((subject, index) => (
-                        <span 
+                        <span
                           key={index}
                           className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-md"
                         >
@@ -250,15 +254,16 @@ const Educations = () => {
                   </div>
                   <div className="text-left">
                     <h3 className="text-lg font-bold text-gray-900">
-                      Al-Barakah School
+
+                      Govt Boys Higher Secondary School
                     </h3>
                     <p className="text-sky-600 font-medium text-sm">
                       Matriculation (SSC)
                     </p>
                     <div className="flex gap-4 text-sm text-gray-600 mt-1">
-                      <span>2005 - 2017</span>
+                      <span>2014 - 2016</span>
                       <span>•</span>
-                      <span>Grade: A+</span>
+                      <span>Grade: A</span>
                     </div>
                   </div>
                 </div>
@@ -268,14 +273,14 @@ const Educations = () => {
                   <ChevronDown className="w-5 h-5 text-gray-600" />
                 )}
               </button>
-              
+
               {expandedSchool === 'matric' && (
                 <div className="px-6 pb-6 border-t border-gray-100">
                   <div className="pt-4">
                     <h4 className="font-semibold text-gray-900 mb-3 text-sm">Coursework</h4>
                     <div className="flex flex-wrap gap-2">
                       {['Mathematics', 'Science', 'English', 'Urdu', 'Islamiyat', 'Pakistan Studies'].map((subject, index) => (
-                        <span 
+                        <span
                           key={index}
                           className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-md"
                         >
@@ -308,7 +313,7 @@ const Educations = () => {
                     SeeBiz Training Institute
                   </p>
                   <p className="text-sm text-gray-600 mt-1">
-                    June 2024 - December 2024 • 6 Months
+                    Aug 2025 - Jan 2026 • 6 Months
                   </p>
                 </div>
               </div>
@@ -317,7 +322,7 @@ const Educations = () => {
               </p>
               <div className="flex flex-wrap gap-2">
                 {['MongoDB', 'Express.js', 'React.js', 'Node.js', 'REST APIs', 'Full-Stack Projects'].map((skill, index) => (
-                  <span 
+                  <span
                     key={index}
                     className="px-3 py-1 bg-sky-100 text-sky-700 text-xs rounded-md"
                   >
@@ -341,7 +346,7 @@ const Educations = () => {
                     Udemy Online Course
                   </p>
                   <p className="text-sm text-gray-600 mt-1">
-                    2024 • Self-paced Learning
+                    2026 • Self-paced Learning
                   </p>
                 </div>
               </div>
@@ -350,7 +355,7 @@ const Educations = () => {
               </p>
               <div className="flex flex-wrap gap-2">
                 {['Advanced React', 'Backend Development', 'Database Design', 'Authentication', 'Deployment'].map((skill, index) => (
-                  <span 
+                  <span
                     key={index}
                     className="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-md"
                   >

@@ -7,7 +7,7 @@ const CertificatesSection = () => {
     {
       title: "MERN Stack Training Program",
       provider: "SeeBiz",
-      period: "Jul 2025 - Dec 2025",
+      period: "Aug 2025 - Jan 2026",
       type: "Full-time • Training",
       description: "Comprehensive MERN Stack training covering MongoDB, Express, React, Node, and full-stack development fundamentals. Perfect for freshers and junior web developers.",
       icon: Code,
@@ -20,7 +20,7 @@ const CertificatesSection = () => {
     {
       title: "Frontend Development Course",
       provider: "Udemy",
-      period: "2024 - 2025",
+      period: "Aug 2025 - Oct 2025",
       type: "Online • Training",
       description: "Hands-on frontend development with HTML, CSS, JavaScript, and modern frameworks like React.js. Ideal for beginners and junior web developers.",
       icon: Globe,
@@ -33,7 +33,7 @@ const CertificatesSection = () => {
     {
       title: "MERN Stack Bootcamp",
       provider: "Udemy",
-      period: "2023 - 2024",
+      period: "Aug 2025 - Jan 2026",
       type: "Online • Bootcamp",
       description: "Practical MERN Stack development course focused on building real-world full-stack web applications. Suitable for fresher or junior level web developers.",
       icon: GraduationCap,
